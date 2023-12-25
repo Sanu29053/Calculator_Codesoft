@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  nav{
+    background-color: #6943ff;
+    padding: 20px;  
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .navbar-mainhead {
+    color: #fff;
+    font-size: 28px;  
+    letter-spacing: 1px;
+    font-family: Arial; 
+    animation:slideText 3s ease-in-out infinite ;
+  }
+  @keyframes slideText {
+    0% {  
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);  
+    } 
+  }
+  
+  form {
+    width: 400px;
+    margin: 30px auto;
+    background: #46464642; 
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #ddd; 
+    padding: 20px;
+  }
+  
+  .display {
+    padding: 0; 
+  }
+  
+  #out {
+    height: 60px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    box-shadow: inset 2px 2px 5px #bbb;
+    border-radius: 5px;
+    text-align: right;
+    padding: 10px;
+  }
+  
+  .act {  
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  input[type="button"] {
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px;
+    cursor: pointer; 
+    box-shadow: 1px 1px 3px #bbb;
+  } 
+  
+  input[type="button"]:hover {
+    background: #eeecec;
+  }
+  
+  #clear, #equal {
+    background: #d9534f;
+    color: #fff;
+  }
+  
+  .cc {
+    text-align: center;
+    padding: 10px;
+    background: none; 
+  }
+  input[type="button"]:hover {
+    background: #eeecec;
+    transform: translateY(-2px);
+    box-shadow: 1px 1px 10px #aaa;
+    transition: all 0.15s ease;
+  }
+  #clear:active, 
+#equal:active {
+  transform: scale(0.95); 
+  transition: transform 0.1s ease;
+}
+
+#out {
+    
+    transition: transform 0.5s ease;
+  }
+  
+  #out.changed {
+     transform: scale(1.2); 
+  }S
